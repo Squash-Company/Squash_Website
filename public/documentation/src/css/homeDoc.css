@@ -149,9 +149,17 @@ ul {
     transition: 0.8s;
     cursor: pointer;
 }
-
-.block:hover {
-    background-color: var(--orange)
+.block:nth-child(1):hover {
+    background-color: #4ECAFF;
+}
+.block:nth-child(2):hover {
+    background-color: #FF6C26;
+}
+.block:nth-child(3):hover {
+    background-color: #FF2626;
+}
+.block:nth-child(4):hover {
+    background-color: #4E5FFF;
 }
 
 .block img { 
