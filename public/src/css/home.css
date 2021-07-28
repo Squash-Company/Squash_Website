@@ -44,7 +44,7 @@ b{
 
 h2 {
     color: var(--white);
-    font: bold 4rem 'Roboto', sans-serif;
+    font: bold 3.5rem 'Roboto', sans-serif;
     margin-bottom: 2rem;
 }
 
@@ -56,7 +56,7 @@ h3 {
 
 .text-cards {
     color: #fff;
-    font: normal 1.5rem 'Questrial', sans-serif;
+    font: normal 1.3rem 'Questrial', sans-serif;
     letter-spacing:1px;
     line-height: 60px;
     transition: 0.2s;
