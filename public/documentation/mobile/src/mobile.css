@@ -175,12 +175,13 @@ ul {
 .container-mobile {
     background: var(--grey);
     width: 100%;
-    height: 45%;
+    height: 38%;
+    display: flex;
 }
 
 .image-telefone {
     background: var(--orange);
-    width: 30%;
+    width: 29%;
     height: 100%;
     position: relative ;
     align-items: center;
@@ -194,5 +195,158 @@ ul {
     text-align: center;
     align-items: center;
     justify-content: center;
+}
 
+.text-main, .subText-main {
+    color: black;
+    position: relative;
+    margin-left: 120px;
+}
+
+.text-main {
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.subtext-main {
+    font-size: 25px;
+}
+
+.text2-main, .subText2-main {
+    color: black;
+    position: relative;
+    margin-left: 120px;
+}
+
+.text2-main {
+    font-size: 40px;
+    margin-top: 80px;
+}
+
+.subtext2-main {
+    font-size: 25px;
+    margin-top: 35px;
+}
+
+.ContainerTopcs {
+    display: block;
+}
+
+.text3-main, .subText3-main {
+    color: black;
+    position: relative;
+    margin-left: 120px;
+}
+
+.text3-main {
+    font-size: 40px;
+    margin-top: 80px;
+}
+
+.subtext3-main {
+    font-size: 25px;
+    margin-top: 35px;
+}
+
+.text4-main, .subText4-main {
+    color: black;
+    position: relative;
+    margin-left: 120px;
+}
+
+.text4-main {
+    font-size: 40px;
+    margin-top: 80px;
+}
+
+.subtext4-main {
+    font-size: 25px;
+    margin-top: 35px;
+}
+
+.text-top .subtext-top {
+    color: var(--white);
+}
+
+.text-top {
+    font-size: 77px;
+}
+
+.subtext-top {
+    color: var(--white);
+    font-size: 28px;
+}
+
+.ContainerTop {
+    padding: 3%;
+    padding-left: 6%;
+    padding-top: 2%;
+}
+
+footer {
+    background: var(--black);
+    margin-top: 1rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    gap: 2rem;
+}
+
+hr{
+    height: 85%;
+    border-color:#212121;
+    width:0;
+}
+
+.footer.docs, .footer.help {
+    color: var(--white);
+    text-align: center;
+}
+
+@media (max-width: 1300px) {
+    .text-top {
+        font-size: 63px;
+    }
+    .subtext-top {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .text-top {
+        font-size: 63px;
+    }
+    .subtext-top {
+        font-size: 20px;
+    }
+    .logoFooter {
+        width: 8rem;
+        margin-left: 1rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .Logo-Footer-RV {
+        margin-right: 50px;
+        margin-left: 30px;
+    }
+    .Body {
+        width: 100%;
+    }
+}
+
+@media (max-width: 370px) {
+    
+    .ContainerTop {
+        padding: 2%;
+        padding-left: 6%;
+        padding-top: 2%;
+    }
+    .text-top {
+        font-size: 803px;
+    }
+    .subtext-top {
+        font-size: 2000px;
+    }
 }
