@@ -6,11 +6,18 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "appAssociation": "AUTO",
     "rewrites": [
       {
-        "source": "/*",
-        "destination": "/404.html"
-      }
+        "source": "/profile/*",
+        "destination": "/profile/index.html"
+      },
+      {
+        "source": "/perfil/*",
+        "destination": "/profile/index.html"
+      }, 
+      { "source": "/short/**", "dynamicLinks": true },
+      { "source": "/url/**", "dynamicLinks": true }
     ],
     "cleanUrls": true
   }
