@@ -1,0 +1,72 @@
+/*======== CARDS ========*/
+
+.card {
+    display: flex;
+    align-items: center;
+    background: var(--black-card);
+    margin-top: 5rem;
+    padding: 2.5rem;
+    border-radius: 10px;
+}
+
+.card.about{
+    margin-bottom: 2rem;
+}
+
+.title-card {
+    font: 500 2rem Roboto, sans-serif;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.text-card {
+    font: 300 2rem Roboto, sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: var(--white);
+}
+
+.spam-card{
+    color: var(--orange-light);
+    text-decoration: none;
+}
+
+.spam-card:hover{
+    font-size: 1.7rem;
+    color: var(--blue);
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.text-card.about {
+    font-size: 1.5rem;
+}
+
+.text-link {
+    font: 300 2rem Roboto, sans-serif;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.img-aboutUs {
+    width: 18rem;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 800px) {
+    .card {
+        margin-top: 3rem;
+    }
+    .column-img {
+        display: none;
+    }
+
+    .text-card.about {
+        font-size: 1.2rem;
+    }
+
+    .card.about{
+        margin-bottom: 8rem;
+    }
+}
+

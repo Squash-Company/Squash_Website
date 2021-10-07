@@ -1,0 +1,58 @@
+/* ======== HEADER ======== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+  /* ======== HEADER ======== */
+
+header {
+    background: var(--orange);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 7rem;
+}
+
+.text-nav {
+    color: var(--white);
+    font: 400 1.5rem Roboto, sans-serif;
+    text-decoration: none;
+    padding: 3rem 3rem 3rem 3rem;
+    transition: all 0.4s;
+}
+
+.text-nav:hover {
+    background-color: var(--black);
+}
+
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 800px) {
+    html {
+        font-size: 87.75%;
+    }
+
+    .logo {
+        width: 5rem;
+    }
+    
+    .text-nav {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
+

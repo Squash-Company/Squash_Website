@@ -1,16 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="">
+    <meta name="description" content="">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://squashc.com/">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://squashc.com/src/assets/icons/social_app_logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://squashc.com/">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="https://squashc.com/src/assets/icons/social_app_logo.png">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Squash</title>
 
+    <title>Home - Squash</title>
+
+    <!-- Fonts dependencies -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
     <!-- Icon -->
     <link rel="shortcut icon" href="../Design/logo/logo-icon-png.png" type="image/x-icon">
     
+    <!-- Color css -->
+    <link rel="stylesheet" href="./src/styles/colors.css" />
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="./src/styles/index.css" />
+
+    <!-- Global css -->
+    <link rel="stylesheet" href="./src/styles/global.css" />
+
+    <!-- Card css -->
+    <link rel="stylesheet" href="./src/styles/cards.css" />
+    
 </head>
 <body>
+    <!-- Header Import  -->
+    <iframe src="./src/header/index.html"></iframe>
+
+    <!-- Cards Container -->
+    <main id="container-main">
+        <div class="card">
+            <div class="column-text">
+                <h2 class="title-card">About Us</h2>
+                <h3 class="text-card">A SERVICE PROVIDER ORGANIZATION SO THAT IT CAN HELP YOU IN EVERYDAY.</h3>
+                <a href="" class="text-link">See our projects.</a>
+            </div>
+            <div class="column-img"><img src="./src/assets/img/about.png" class="img-aboutUs" alt=""></div>
+        </div>
+        <div class="card">
+            <div class="column-img"><img src="./src/assets/img/team.png" class="img-aboutUs" alt=""></div>
+            <div class="column-text">
+                <h2 class="title-card">Team</h2>
+                <h3 class="text-card">“FROM DISCORD TO SQUASH.”</h3>
+                <a href="" class="text-link"> + Learn More</a>
+            </div>
+        </div>
+        <div class="card about">
+            <div class="column-text about">
+                <h2 class="title-card">Squash About</h2>
+                <h3 class="text-card about">Squash was founded in July 10, 2021 by <a href="#" class="spam-card">Kauã Vitório</a> and your CEOs were <a href="#" class="spam-card">Matheus Souza</a>, <a href="#" class="spam-card">Yuri Dantas</a> and <a href="#" class="spam-card">Pedro Morato</a>, with the aim of being an online services platform, distributing, hosting system, cloud storage, link shortener and between others...</h3>
+            </div>
+        </div>
+    </main>
     
+    <!-- ============ Native Scripts ============ -->
+    <script src="./src/scripts/index.js"></script>
+    
+    <!-- ============ Host Scripts ============ -->
+    <!--<script type = "module" src="./config/app.js"></script>-->
+
 </body>
 </html>
