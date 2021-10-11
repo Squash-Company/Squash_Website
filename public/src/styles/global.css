@@ -31,5 +31,52 @@ iframe {
 #container-main {
     width: min(90vw, 800px);
     margin-inline: auto;
+    padding: 1rem;
 }
 
+/* ======== RESPONSIVE ======== */
+
+
+@media (max-width: 800px) {
+    html {
+        font-size: 87.75%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 75.75%;
+    }
+    #container-main {
+        height: 130vh;
+        margin-bottom: 15rem;
+    }
+    
+    .title-page {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 70%;
+    }
+    #container-main {
+        height: 150vh;
+        margin-bottom: 15rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    html {
+        font-size: 70%;
+    }
+    iframe {
+        width: 80%;
+    }
+    #container-main {
+        width: min(40vw, 710px);
+        height: 150vh;
+        margin-bottom: 35rem;
+    }
+}

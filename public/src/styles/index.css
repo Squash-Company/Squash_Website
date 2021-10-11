@@ -3,9 +3,9 @@
     margin: 0;
 }
 
-body{
+/*body{
     cursor: url(../assets/icons/ic_cursor.png), auto;
-}
+}*/
 
 /* Gradient Scrollbar */
 body::-webkit-scrollbar {
