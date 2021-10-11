@@ -33,10 +33,12 @@ ul {
     text-decoration: none;
     padding: 3rem 3rem 3rem 3rem;
     transition: all 0.4s;
+    cursor: pointer;
 }
 
 .text-nav:hover {
     background-color: var(--black);
+    cursor: pointer;
 }
 
 

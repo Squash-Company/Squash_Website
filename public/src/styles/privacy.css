@@ -1,0 +1,42 @@
+/*======== CARDS ========*/
+
+.container-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.title-page {
+    width: 80%;
+    font: 500 3rem Roboto, sans-serif;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+
+.text-privacy-link {
+    font: 500 1.5rem Roboto, sans-serif;
+    color: var(--white);
+}
+
+.text-card.privacy {
+    font: 400 1.3rem Roboto, sans-serif;
+}
+
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 800px) {
+    .container-title {
+        flex-direction: column;
+    }
+    .title-page {
+        font-size: 2rem;
+    }
+    .text-privacy-link{
+        font-size: 1rem;
+    }
+    .text-card.privacy {
+        font-size: 1rem;
+    }
+}

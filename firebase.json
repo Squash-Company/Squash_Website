@@ -8,14 +8,10 @@
     ],
     "appAssociation": "AUTO",
     "rewrites": [
-      {
-        "source": "/profile/*",
-        "destination": "/profile/index.html"
-      },
-      {
-        "source": "/perfil/*",
-        "destination": "/profile/index.html"
-      }, 
+      {"source": "/privacidade/*", "destination": "/privacy/index.html" },
+      { "source": "/privacy/*", "destination": "/privacy/index.html" }, 
+      { "source": "/about/*", "destination": "/index.html" },
+      { "source": "/sobre/*", "destination": "/index.html" }, 
       { "source": "/short/**", "dynamicLinks": true },
       { "source": "/url/**", "dynamicLinks": true }
     ],
