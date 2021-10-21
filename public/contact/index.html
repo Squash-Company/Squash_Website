@@ -33,7 +33,7 @@
     <div class="container-contact">
         <div class="box-contact">
             <h2 class="title-contact">Contact Information</h2>
-            <h4 class="text-contact">Get in touch with us through our means of communication or send us a message.</h4><br>
+            <h4 class="text-contact">Get in touch with us through our <br>means of communication or send us a message.</h4><br>
             <div class="container-phone">
                 <img src="./assets/icons/telephone.png" class="icon-phone" alt="">
                 <h3 class="text-phone">+55 11 111111111</h3>
@@ -45,13 +45,13 @@
         </div>
         <div class="box-form">
             <form action="">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" placeholder="Your Name">
-                <label for="email">Your Email</label>
-                <input type="text" id="email" placeholder="Your Email">
-                <label for="message">Message</label>
-                <input type="text" id="message" placeholder="Your Message">
-                <input type="submit" class="btn-form-contact" value="Send Message">
+                <label for="name" class="sr-only">Your Name</label>
+                <input type="text" id="name" class="input-name" placeholder="Your Name">
+                <label for="email" class="sr-only">Your Email</label>
+                <input type="email" id="email" class="input-email" placeholder="Your Email">
+                <label for="message" class="sr-only">Message</label>
+                <textarea name="" id="message" class="text-message" cols="30" rows="0" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn-form-contact">Send Message</button>
             </form>
         </div>
     </div>
