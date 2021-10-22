@@ -1,0 +1,160 @@
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.container-contact {
+    margin: 1.5rem;
+    display: flex;
+    width: 70vw;
+    margin-inline: auto;
+}
+
+.box-contact {
+    background: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    padding-bottom: 10rem;
+    border-radius: 10px;
+}
+
+.title-contact {
+    font: 400 2rem "Ubuntu", sans-serif; ;
+    color: var(--white);
+    text-align: center;
+    margin: 1rem;
+}
+
+.text-contact {
+    font: 400 1.2rem "Ubuntu", sans-serif; ;
+    color: var(--white);
+    text-align: center;
+    margin: 1rem;
+}
+
+.container-phone, .container-email {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem;
+}
+
+.icon-phone, .icon-envelope {
+    width: 2.5rem;
+}
+
+.text-phone, .text-email {
+    margin-left: 1rem;
+    color: var(--white);
+    font: 400 1.2rem "Ubuntu", sans-serif;
+}
+
+
+.box-form form {    
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding-left: 5rem;
+}
+
+.box-form form label {
+    color: #E5E5E5;
+    font: 400 1rem "Ubuntu", sans-serif;
+    text-align: left;
+
+}
+
+.box-form form input {
+    background: none;
+    margin: 0.5rem;
+    border: none;
+    outline: none;
+    border-bottom: solid 2px var(--white);
+    margin-bottom: 5rem;
+    font: 400 1.2rem "Ubuntu", sans-serif;
+    color: var(--white);
+    
+}
+
+.box-form form input::placeholder, 
+.text-message::placeholder {
+    color: var(--white);
+    font: 400 1.3rem "Ubuntu", sans-serif;
+}
+
+.text-message {
+    font: 400 1rem "Ubuntu", sans-serif;
+    margin: 0.5rem;
+    margin-top: 3rem;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    resize: none;
+    color: var(--white);
+}
+
+.box-form form input:focus,
+.text-message:focus {
+    border-bottom: solid 2px var(--orange);
+}
+
+.btn-form-contact {
+    margin: 0.5rem;
+    margin-top: 3rem;
+    font: 400 1rem "Ubuntu", sans-serif;
+    background-color: var(--orange);
+    padding: 1.3rem;
+    width: 50%;
+    color: var(--white);
+    border: none !important;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btn-form-contact:hover {
+    opacity: 90%;
+}
+
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 800px) {
+    .container-contact {
+        flex-direction: column;
+        height: 150vh;
+    }
+
+    .container-phone, .container-email {
+        margin: 0.5rem;
+    }
+    
+    .icon-phone, .icon-envelope {
+        width: 1.3rem;
+    }
+
+    
+    .text-phone, .text-email {
+        font-size: 1rem;
+    }
+
+    .box-form form {
+        margin-top: 3rem;
+        width: 70vw;
+        padding-left: 0rem;
+        display: flex;
+        justify-content:center;
+    }
+
+}
+

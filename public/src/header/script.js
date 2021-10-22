@@ -6,6 +6,7 @@ var logo_btn = document.getElementById('logo_btn')
 //  Url types
 var privacy_EN = ["privacy", "privacidade"]
 var about_EN = ["about", "sobre", ""]
+var contact_EN = ["contact", "contact"]
 
 var proc_and_host = window.location.protocol + "//" + window.location.host
 
@@ -39,6 +40,8 @@ function checkLoc(){
 
     }else if(about_EN.includes(path)){
         about_btn.style.backgroundColor = "var(--black)"
+    } else if(contact_EN.includes(path)) {
+        contact_btn.style.backgroundColor = "var(--black)"
     }
 }
 
