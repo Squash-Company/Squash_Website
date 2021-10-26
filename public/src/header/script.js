@@ -6,7 +6,7 @@ var logo_btn = document.getElementById('logo_btn')
 //  Url types
 var privacy_EN = ["privacy", "privacidade"]
 var about_EN = ["about", "sobre", ""]
-var contact_EN = ["contact", "contact"]
+var contact_EN = ["contact", "contato"]
 
 var proc_and_host = window.location.protocol + "//" + window.location.host
 
@@ -27,7 +27,8 @@ contact_btn.addEventListener("click", () => {
 })
 
 function getInstance(){
-    if(proc_and_host.includes('localhost') || proc_and_host.includes('5500')) return "/public/"
+    if(proc_and_host.includes('localhost') || proc_and_host.includes('5500')
+    || proc_and_host.includes('5501')) return "/public/"
     else return "/";
 }
 
