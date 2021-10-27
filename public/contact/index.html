@@ -32,15 +32,17 @@
 
     <div class="container-contact">
         <div class="box-contact">
-            <h2 class="title-contact">Contact Information</h2>
-            <h4 class="text-contact">Get in touch with us through our <br>means of communication or send us a message.</h4><br>
-            <div class="container-phone">
-                <img src="./assets/icons/ic_dev.png" class="icon-phone" alt="">
-                <h3 class="text-email">contact@kauavitorio.com</h3>
-            </div>
-            <div class="container-email">
-                <img src="./assets/icons/envelope.png" class="icon-envelope" alt="">
-                <h3 class="text-email">help.squash@gmail.com</h3>
+            <div class="container-text">
+                <h2 class="title-contact">Contact Information</h2>
+                <h4 class="text-contact">Get in touch with us through our <br>means of communication or send us a message.</h4><br>
+                <div class="container-phone">
+                    <img src="./assets/icons/ic_dev.png" class="icon-phone" alt="">
+                    <h3 class="text-email">contact@kauavitorio.com</h3>
+                </div>
+                <div class="container-email">
+                    <img src="./assets/icons/envelope.png" class="icon-envelope" alt="">
+                    <h3 class="text-email">help.squash@gmail.com</h3>
+                </div>
             </div>
         </div>
         <div class="box-form">
@@ -48,15 +50,15 @@
                 method="POST">
 
                 <!-- User name input -->
-                <label for="name" class="sr-only">Your Name</label>
-                <input type="text" name="_name" id="name" class="input-name" placeholder="Your Name">
+                <label for="name" class="sr-only name">Your Name</label>
+                <input type="text" name="_name" id="name" class="input-name"  placeholder="Your Name">
 
                 <!-- User email input -->
-                <label for="email" class="sr-only">Your Email</label>
+                <label for="email" class="sr-only email">Your Email</label>
                 <input type="email" name="_replyto" id="email" class="input-email" placeholder="Your Email">
 
                 <!-- User message input -->
-                <label for="message" class="sr-only">Message</label>
+                <label for="message" class="sr-only message">Message</label>
                 <textarea name="message" id="message" class="text-message" cols="30" rows="0" placeholder="Your Message"></textarea>
 
                 <button type="submit" class="btn-form-contact">Send Message</button>
@@ -64,4 +66,5 @@
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
