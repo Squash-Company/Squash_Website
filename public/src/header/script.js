@@ -32,8 +32,8 @@ function getInstance(){
     else return "/";
 }
 
-checkLoc();
-
+//  This function will be called when the page is loaded
+//  In the onload method
 function checkLoc(){
     var path = replacePublic(document.referrer);
     if(privacy_EN.includes(path)){

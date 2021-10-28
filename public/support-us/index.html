@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Support Us - Squash">
+    <meta name="description" content="A service provider organization so that it can help you in everyday.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://squashc.com/">
+    <meta property="og:image" content="https://squashc.com/src/assets/icons/social_app_logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://squashc.com/">
+    <meta property="twitter:image" content="https://squashc.com/src/assets/icons/social_app_logo.png">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Us - Squash</title>
+    
+    <!-- Icon -->
+    <link rel="shortcut icon" href="../src/assets/icons/logo-icon.png" type="image/x-icon">
+    
+    <!-- Color css -->
+    <link rel="stylesheet" href="../src/styles/colors.css" />
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="../support-us/src/style.css" />
+
+    <!-- index css -->
+    <link rel="stylesheet" href="../src/styles/index.css" />
+
+    <!-- Global css -->
+    <link rel="stylesheet" href="../src/styles/global.css" />
+
+    <!-- Card css -->
+    <link rel="stylesheet" href="../src/styles/cards.css" />
+
+</head>
+<body>
+
+    <!-- Header Import  -->
+    <iframe src="../src/header/index.html"></iframe>
+
+
+    <!-- Cards Container -->
+    <!-- Hey, wellcome 👋 -->
+    <section class="section-cards">
+        <div class="card">
+            <div class="column-text">
+                <h2 class="title-card">Hey, wellcome 👋</h2>
+                <h3 class="text-card">We are happy to know that you want or are thinking of supporting our work, we work day and night to provide the best for you.</h3>
+                <a href="#donate-section" class="text-link gradient-text">Let's go</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Warning -->
+    <section class="section-cards">
+        <div class="card">
+            <div class="column-text">
+                <h2 class="title-card">Warning 📣</h2>
+                <h3 class="text-card">Using and promoting our services helps a lot okay? If you're not a partner, it doesn't mean you don't help us and aren't special. All our users are <spam class="gradient-text">extremely</spam> important to us whether they are a partner or not ❤️.
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate -->
+    <section class="section-cards" id="donate-section">
+        <div class="card">
+            <div class="column-text">
+                <h2 class="title-card">Donate</h2>
+                <h3 class="text-card-semi">We are currently keeping our services with our own funds without any sponsor and much less partner companies, here you can become a sponsor or make a donation. It is worth remembering that every donation is converted into improvements for the platform.</h3>
+                <a onclick="alertDonate()" target="_blank" class="text-link gradient-text">Donate</a>
+            </div>
+            <div class="column-img"><img src="../src/assets/icons/ic_paypal.png" class="img-aboutUs short" alt=""></div>
+        </div>
+    </section>
+
+    <!-- Partner -->
+    <section class="section-cards" id="partner-section">
+            <div class="card">
+                <div class="column-text">
+                    <h2 class="title-card">Partner</h2>
+                    <h3 class="text-card-semi">For you to be a Squash partner, we ask that you contact our founder <a href="https://kauavitorio.com/" class="spam-card">Kauã Vitório</a> by email. There we will understand what your proposals are and what we have to offer.</h3>
+                    <a href="mailto:contact@kauavitorio.com?subject=I want to be a Squash partner"
+                    target="_blank" class="text-link gradient-text">Send an email</a>
+                </div>
+                <div class="column-img"><img src="../src/assets/img/img_alliance.png" class="img-aboutUs short" alt=""></div>
+            </div>
+        </section>
+
+
+    <!-- Smooth scrolling  -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', function (e) {
+                e.preventDefault();
+                var href = this.getAttribute("href");
+                var elem = document.querySelector(href)||document.querySelector("a[name="+href.substring(1, href.length)+"]");
+                //gets Element with an id of the link's href 
+                //or an anchor tag with a name attribute of the href of the link without the #
+                window.scroll({
+                    top: elem.offsetTop, 
+                    left: 0, 
+                    behavior: 'smooth' 
+                });
+            });
+        });
+    </script>
+
+    <!-- Donater alert warning -->
+    <!-- This notice needs to be checked when the final version is ready -->
+    <script>
+        function alertDonate(){
+            if (window.confirm('Warning !!\nThe recipient of the donation must appear as Roberto Victorio or kauavitorioof@gmail.com'))
+            {
+                window.open('https://www.paypal.com/donate?hosted_button_id=Z8RBWU4EGXR2N', '_blank');
+            }
+        }
+    </script>
+    
+</body>
+</html>
