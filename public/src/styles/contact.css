@@ -1,13 +1,13 @@
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
+    visibility: hidden;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
+    margin-bottom: 0.3rem;
+    color: var(--white);
+    font-weight: 500;
+    transition: 0.4s;
 }
 
 .container-contact {
@@ -22,6 +22,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     padding: 3rem;
     padding-bottom: 10rem;
     border-radius: 10px;
@@ -71,7 +72,7 @@
     color: #E5E5E5;
     font: 400 1rem "Ubuntu", sans-serif;
     text-align: left;
-
+    
 }
 
 .box-form form input {
@@ -132,22 +133,28 @@
 @media (max-width: 800px) {
     .container-contact {
         flex-direction: column;
+        justify-content: center;
         height: 150vh;
+        margin-inline: auto;
     }
-
+    .container-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .container-phone, .container-email {
+        justify-content: center;
         margin: 0.5rem;
     }
     
     .icon-phone, .icon-envelope {
         width: 1.3rem;
     }
-
     
     .text-phone, .text-email {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
-
+    
     .box-form form {
         margin-top: 3rem;
         width: 70vw;
@@ -155,6 +162,19 @@
         display: flex;
         justify-content:center;
     }
-
 }
 
+@media (width: 768px) {
+    .container-contact {
+        padding-bottom: 60rem
+    }
+} 
+
+@media(width: 280px) {
+    .title-contact {
+        font-size: 1.4rem;
+    }
+    .text-contact {
+        font-size: 1rem;
+    }
+}
