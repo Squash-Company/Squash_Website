@@ -69,6 +69,10 @@ iframe {
     .main-body {
         height: 250vh;
     }
+
+    iframe{
+        height: min(20vw, 40vw);
+    }
 }
 
 @media (width: 768px) {
