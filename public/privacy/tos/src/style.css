@@ -22,6 +22,7 @@ spam{
 
 .text-card{
     font-size: 1.3rem;
+    width: 100%;
 }
 
 .spam-card:hover{
@@ -35,8 +36,10 @@ spam{
 
 /* ======== RESPONSIVE ======== */
 @media (max-width: 800px) {
+    
     .text-card{
         font-size: 1rem;
+        width: 100%;
     }
 }
 

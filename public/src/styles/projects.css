@@ -3,20 +3,18 @@
     font: 500 3rem Roboto, sans-serif;
     text-align:center;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .container-box {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 2rem;
 }
 
 .container-projects, .container-services {
     display: flex;
     text-align: center;
     justify-content: center;
-    padding: 2rem;
 }
 
 .box {
@@ -54,7 +52,6 @@
 }
 
 .box > a {
-    background-color: red;
     width: 23.5vw;
     padding: 1rem;
     margin-top: 2.5rem;
@@ -82,3 +79,91 @@
 .container-services > .box > a{
     background-color: #1D84FE;
 }    
+
+
+/* MOTO G4, IPHONES E ETC...*/
+@media (max-width: 800px) {
+    .title-page {
+        font-size: 2rem;
+    }
+    .container-box {
+        margin-bottom: 20rem;
+        padding: 0rem;
+    }
+    .container-projects, .container-services {
+        flex-direction: column;
+        align-items: center;
+        padding: 0rem;
+    }
+    .box {
+        width: 20%;
+        padding: 1rem 10rem 0rem 10rem;
+    }
+    
+    .box > h3 {
+        font-size: 1.3rem;
+    }
+    .box > h4 {
+        font-size: 0.92rem;
+        width: 40vw;
+    }
+    .box > a {
+        width: 50vw;
+        border-radius: 10px;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* GALAXY FOLD */
+@media (width: 280px) {
+    .box {
+        width: 20%;
+        padding: 1rem 8rem 0rem 8rem;
+    }
+}
+
+
+/* IPAD */
+@media (width: 768px) {
+    .title-page {
+        margin-top: 0rem;
+    }
+    .container-box {
+        margin-bottom: 32rem;
+        padding: 0rem;
+    }
+    .box > a {
+        width: 20vw;
+    }
+}
+
+/* IPAD PRO*/
+@media (width: 1024px) {
+    .box > a {
+        border-radius: 10px;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* NEST HUB MAX*/
+@media (width: 1280px) {
+    .title-page{
+        margin-right:  20rem;
+    }
+    .container-box {
+        margin-bottom: 20rem;
+        margin-right:  20rem;
+        padding: 0rem;
+    }
+    .container-projects, .container-services {
+        flex-direction: column;
+        align-items: center;
+        padding: 0rem;
+    }
+    .box > a {
+        width: 21.3vw;
+    }
+}
