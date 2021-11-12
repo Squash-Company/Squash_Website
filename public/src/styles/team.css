@@ -1,0 +1,19 @@
+.title {
+    text-align: center;
+    font: 500 3rem Roboto, sans-serif;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.img-team {
+    width: 100%;
+}
+
+.cargos {
+    position: absolute;
+}
