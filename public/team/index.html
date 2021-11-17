@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team - Squash</title>
+    <title>Squash | Team</title>
 
     <!-- Icon -->
     <link rel="shortcut icon" href="../Design/logo/logo-icon-png.png" type="image/x-icon">
@@ -23,17 +23,100 @@
 
     <!-- Team css -->
     <link rel="stylesheet" href="../src/styles/team.css" />
-  
+
 </head>
 <body>
     <!-- Header Import  -->
     <iframe src="../src/header/index.html"></iframe>
 
-    <div class="container-team">
+    <div class="container-team" id="squash-team-pic">
         <h1 class="title">TEAM</h1>
         <div class="container-cards">
             <img src="../Design/Team/team_image_no_bg.png" class="img-team" alt="">
         </div>
     </div>
+
+    <!-- “FROM DISCORD TO SQUASH.” -->
+    <section class="section-cards" id="from-discord">
+        <div class="card about">
+            <div class="column-text about">
+                <h2 class="title-card">“FROM DISCORD TO SQUASH.”</h2>
+                <h3 class="text-card-semi">Squash appeared on a call on <a href="https://discord.com/" class="spam-card">Discord</a> where <a href="https://kauavitorio.com/" class="spam-card">Kauã Vitório</a> wanted to create a new project after he and his friends completed the technical course and then came the idea of creating a social network where the user could create an account, post, follow other users, chat on tasting and more.</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Squash Creators -->
+    <section id="creators">
+
+        <!-- Title -->
+        <section class="page-header">
+            <div class="container-title">
+                <h1 class="title-page">CREATORS</h1>
+            </div>
+        </section>
+
+        <!-- Kaua Vitorio -->
+        <section class="section-cards" id="kaua-vitorio">
+            <div class="card about">
+                <div class="column-text about">
+                    <h2 class="title-card">Kauã Vitório</h2>
+                    <h3 class="text-card-semi" id="desc-kaua-vitorio"></h3>
+                    <h3 class="text-card-semi" id="more-kaua-vitorio">Know more: <a href="https://kauavitorio.com/" class="spam-card" >Website</a></h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Matheus Souza -->
+        <section class="section-cards" id="matehus-souza">
+            <div class="card about">
+                <div class="column-text about">
+                    <h2 class="title-card">Matheus Souza</h2>
+                    <h3 class="text-card-semi" id="desc-matheus-souza"></h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Yuri Dantas -->
+        <section class="section-cards" id="yuri-dantas">
+            <div class="card about">
+                <div class="column-text about">
+                    <h2 class="title-card">Yuri Dantas</h2>
+                    <h3 class="text-card-semi">Yuri Desc</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pedro Henrique -->
+        <section class="section-cards" id="pedro-henrique">
+            <div class="card about">
+                <div class="column-text about">
+                    <h2 class="title-card">Pedro Henrique</h2>
+                    <h3 class="text-card-semi">Pedro Desc</h3>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <script>
+    function calculate_age(dob) { 
+        var diff_ms = Date.now() - dob.getTime();
+        var age_dt = new Date(diff_ms); 
+        return Math.abs(age_dt.getUTCFullYear() - 1970);
+    }
+
+    var kaua_age = calculate_age(new Date(2004, 04, 31));
+    var matheus_age = calculate_age(new Date(2003, 08, 29));
+
+    var desc_matheus = document.getElementById("desc-matheus-souza");
+    desc_matheus.innerHTML = `"Hi!
+                            My name is Matheus Souza, I'm `+ matheus_age +` years old and I'm CEO and front-end developer at Squash, I graduated in Systems Development from ETEC. My skills are HTML5, CSS3, JavaScript and UI Design"`
+
+    var desc_kaua = document.getElementById("desc-kaua-vitorio");
+    desc_kaua.innerHTML = `"Hi!
+                            My name is Kauã Vitório da Silva Lima, I'm `+ kaua_age +` years old and I'm CEO, founder and mobile | back-end developer at Squash, I graduated in Systems Development from ETEC. My skills are Java, JavaScript, Node JS, HTML5 and CSS3"`
+
+    </script>
 </body>
 </html>

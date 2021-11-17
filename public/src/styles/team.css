@@ -17,3 +17,21 @@
 .cargos {
     position: absolute;
 }
+
+.container-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.title-page.as-is{
+    font-size: 2rem;
+}
+
+.title-page {
+    width: 100%;
+    font: 500 3rem Roboto, sans-serif;
+    text-transform: uppercase;
+    color: var(--white);
+}
