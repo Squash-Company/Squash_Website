@@ -25,6 +25,7 @@ ul {
 
 .logo {
     width: 7rem;
+    cursor: pointer;
 }
 
 .text-nav {
