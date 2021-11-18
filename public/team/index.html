@@ -73,6 +73,7 @@
                 <div class="column-text about">
                     <h2 class="title-card">Matheus Souza</h2>
                     <h3 class="text-card-semi" id="desc-matheus-souza"></h3>
+                    <h3 class="text-card-semi" id="more-kaua-vitorio">Know more: <a href="https://www.linkedin.com/in/matheusssleite/" class="spam-card" >Linkedin</a></h3>
                 </div>
             </div>
         </section>
@@ -82,7 +83,8 @@
             <div class="card about">
                 <div class="column-text about">
                     <h2 class="title-card">Yuri Dantas</h2>
-                    <h3 class="text-card-semi">Yuri Desc</h3>
+                    <h3 class="text-card-semi" id="desc-yuri-dantas"></h3>
+                    <h3 class="text-card-semi" id="more-yuri-dantas">Know more: <a href="https://www.instagram.com/yuri.dann/" target="_blank" class="spam-card" >Instagram</a></h3>
                 </div>
             </div>
         </section>
@@ -92,7 +94,8 @@
             <div class="card about">
                 <div class="column-text about">
                     <h2 class="title-card">Pedro Henrique</h2>
-                    <h3 class="text-card-semi">Pedro Desc</h3>
+                    <h3 class="text-card-semi" id="desc-pedro-henrique"></h3>
+                    <h3 class="text-card-semi" id="more-yuri-dantas">Know more: <a href="https://www.instagram.com/pedrohmmf03/" target="_blank" class="spam-card" >Instagram</a></h3>
                 </div>
             </div>
         </section>
@@ -108,14 +111,24 @@
 
     var kaua_age = calculate_age(new Date(2004, 04, 31));
     var matheus_age = calculate_age(new Date(2003, 08, 29));
-
-    var desc_matheus = document.getElementById("desc-matheus-souza");
-    desc_matheus.innerHTML = `"Hi!
-                            My name is Matheus Souza, I'm `+ matheus_age +` years old and I'm CEO and front-end developer at Squash, I graduated in Systems Development from ETEC. My skills are HTML5, CSS3, JavaScript and UI Design"`
+    var yuri_age = calculate_age(new Date(2003, 08, 16));
+    var pedro_age = calculate_age(new Date(2003, 08, 16));
 
     var desc_kaua = document.getElementById("desc-kaua-vitorio");
     desc_kaua.innerHTML = `"Hi!
-                            My name is Kauã Vitório da Silva Lima, I'm `+ kaua_age +` years old and I'm CEO, founder and mobile | back-end developer at Squash, I graduated in Systems Development from ETEC. My skills are Java, JavaScript, Node JS, HTML5 and CSS3"`
+                            My name is Kauã Vitório da Silva Lima, I'm `+ kaua_age +` years old and I'm CEO, founder and mobile | back-end developer at Squash, I'm graduated in Systems Development from ETEC. My skills are Java, JavaScript, Node JS, HTML5 and CSS3"`
+
+    var desc_matheus = document.getElementById("desc-matheus-souza");
+    desc_matheus.innerHTML = `"Hi!
+                            My name is Matheus Souza, I'm `+ matheus_age +` years old and I'm CEO and front-end developer at Squash, I'm graduated in Systems Development from ETEC. My skills are HTML5, CSS3, JavaScript and UI Design"`
+
+    var desc_yuri = document.getElementById("desc-yuri-dantas");
+    desc_yuri.innerHTML = `"Hi!
+                            My name is Yuri Dantas, I'm `+ yuri_age +` years old, I'm from Goiânia-GO, I'm CEO and Copydesk at Squash. I'm  graduated in basic information technology. I have a passion for writing, and in 2021 I started my first written project."`
+
+    var desc_pedro = document.getElementById("desc-pedro-henrique");
+    desc_pedro.innerHTML = `"Hi!
+                            My name is Pedro Henrique, I'm `+ pedro_age +` years old, I'm CEO and Systems Analyst at Squash.  I'm graduated in Systems Development from ETEC."`
 
     </script>
 </body>
